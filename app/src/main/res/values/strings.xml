@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HomeworkTwelve</string>
+    <string name="vase">Vase</string>
+    <string name="marble_flower_vase">Marble Flower Vase</string>
+    <string name="dollar">$</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="color">Color</string>
+    <string name="minus">-</string>
+    <string name="_0">0</string>
+    <string name="plus">+</string>
+    <string name="total_price">Total Price</string>
+</resources>

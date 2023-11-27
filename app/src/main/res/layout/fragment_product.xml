@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#201c24"
+    android:padding="15dp"
+    tools:context=".ProductFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_rectangle"
+        android:src="@drawable/vase1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vase For You"
+        android:textColor="#FFF"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivPicture" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivHeart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/heart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivPicture" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvquantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="8,321"
+        android:textColor="#FFF"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvConstrantText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="2dp"
+        android:text="Sold"
+        android:textColor="#FFF"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/tvquantity"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iStar"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/star"
+        app:layout_constraintStart_toEndOf="@id/tvConstrantText"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="4.8"
+        android:textColor="#FFF"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/iStar"
+        app:layout_constraintTop_toBottomOf="@id/iStar"
+        app:layout_constraintTop_toTopOf="@id/iStar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="(7934 reviews)"
+        android:textColor="#FFF"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/tvRate"
+        app:layout_constraintTop_toBottomOf="@id/iStar"
+        app:layout_constraintTop_toTopOf="@id/iStar"
+        app:layout_goneMarginStart="5dp" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Description"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvquantity" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="fasdfadf asdf asodijfsad f sadoifsa jdfasdf sadfiosad fsadf ajoi"
+        android:textColor="#FFF"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:text="@string/color"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvText" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:id="@+id/linearColors"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tvColor">
+
+      <androidx.appcompat.widget.AppCompatImageButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/circ"
+          android:src="@drawable/baseline_done_24"
+          android:layout_marginStart="10dp"/>
+
+      <androidx.appcompat.widget.AppCompatImageButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/circ1"
+          android:layout_marginStart="10dp"/>
+
+      <androidx.appcompat.widget.AppCompatImageButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/circ2"
+          android:layout_marginStart="10dp"/>
+
+      <androidx.appcompat.widget.AppCompatImageButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/circ3"
+          android:layout_marginStart="10dp"/>
+
+      <androidx.appcompat.widget.AppCompatImageButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/circ4"
+          android:layout_marginStart="10dp"
+          />
+      <androidx.appcompat.widget.AppCompatImageButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/circ5"
+          android:layout_marginStart="10dp"
+          />
+
+
+
+  </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAddQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Description"
+
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lineaQuantity" />
+
+
+    <LinearLayout
+
+        android:layout_margin="5dp"
+        android:id="@+id/lineaQuantity"
+        app:layout_constraintTop_toBottomOf="@id/linearColors"
+        app:layout_constraintStart_toEndOf="@id/tvAddQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rectangle"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/minus"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:background="?android:selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/_0"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:padding="8dp" />
+
+        <Button
+            android:textColor="#FFF"
+            android:id="@+id/btnAdd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/plus"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:background="?android:selectableItemBackground" />
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:textColor="#AAA5A5"
+        android:text="@string/total_price"
+        android:textSize="10sp"
+        android:id="@+id/tvTotalPrice"
+        app:layout_constraintTop_toBottomOf="@id/tvAddQuantity"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/dollar"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalPrice" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="85.00"
+        android:layout_marginStart="1dp"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tvDollar"
+        app:layout_constraintTop_toTopOf="@id/tvDollar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/tvPrice"
+        android:textSize="10sp"
+        android:text="Add To cart"
+        app:layout_constraintTop_toTopOf="@+id/tvPrice"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

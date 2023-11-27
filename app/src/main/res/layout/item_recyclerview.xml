@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <FrameLayout
+        android:id="@+id/layoutFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ivbImage"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:background="@drawable/vase1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iheart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/heart" />
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitlee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="@string/marble_flower_vase"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutFrame" />
+
+    <LinearLayout
+        android:id="@+id/layoutLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitlee">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iStar"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/star"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitlee" />
+
+        <TextView
+            android:id="@+id/tvRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="4.8"
+            android:textColor="#FFF"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/iStar"
+            app:layout_constraintTop_toBottomOf="@id/iStar"
+            app:layout_constraintTop_toTopOf="@id/iStar" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLine"
+            android:layout_width="1dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="7dp"
+            android:background="@drawable/line"
+            app:layout_constraintBottom_toBottomOf="@id/tvRate"
+
+            app:layout_constraintStart_toEndOf="@id/tvRate"
+            app:layout_constraintTop_toTopOf="@id/tvRate" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvquantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="8,321"
+
+            android:textColor="#FFF"
+            android:textSize="13sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvConstrantText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="2dp"
+            android:text="Sold"
+            android:textColor="#FFF"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/dollar"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutLinear" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="85.00"
+        android:layout_marginStart="1dp"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tvDollar"
+        app:layout_constraintTop_toTopOf="@id/tvDollar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
